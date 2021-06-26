@@ -1,0 +1,41 @@
+import React from 'react'
+import { Navbar, Nav, Button, Container } from 'react-bootstrap'
+
+const Header = () => {
+  return (
+    <header>
+      <Navbar
+        variant='dark'
+        expand='lg'
+        collapseOnSelect
+        style={{ background: '#343A40' }}
+        className='navbar'
+      >
+        <Container>
+          <Navbar.Brand href='#home'>
+            Multicone
+            <span style={{ fontSize: 12, color: 'rgb(248, 216, 74)' }}>
+              {' '}
+              beta
+            </span>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse
+            id='basic-navbar-nav'
+            className='justify-content-end align-items-center'
+          >
+            <Nav>
+              <Nav.Link href='/'>Home</Nav.Link>
+              <Nav.Link href='#services'>Services</Nav.Link>
+              <Nav.Link href='/contact'>Contact</Nav.Link>
+              <Nav.Link href='/about'>About</Nav.Link>
+              <Button className='mx-3'>Sign In</Button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  )
+}
+
+export default Header
