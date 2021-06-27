@@ -6,7 +6,7 @@ const ProjectScreen = () => {
   return (
     <div className='project-main'>
       <Container>
-        <Row>
+        <Row className='d-flex justify-content-center'>
           <h1 className='text-center title'>Explore our Projects</h1>
           <Row className='my-4'>
             {projectData.map((project) => (

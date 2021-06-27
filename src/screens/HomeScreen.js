@@ -7,7 +7,8 @@ const HomeScreen = () => {
       <Container className='d-flex justify-content-between align-items-center'>
         <Row>
           <Col
-            md={6}
+            lg={6}
+            md={12}
             sm={12}
             className='d-flex justify-content-center align-items-center'
           >
@@ -26,11 +27,17 @@ const HomeScreen = () => {
             </div>
           </Col>
           <Col
-            md={6}
+            lg={6}
+            md={12}
             sm={12}
             className='d-flex justify-content-center align-items-center'
           >
-            <div className='hero-right'></div>
+            <div className='hero-right d-flex justify-content-center align-items-center'>
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/svg-glow.svg`}
+                alt='svg glow'
+              />
+            </div>
           </Col>
         </Row>
       </Container>

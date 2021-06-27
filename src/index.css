@@ -1,16 +1,26 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .app {
-  margin: 40px;
-  border-radius: 20px;
+  margin: 0;
+  border: none;
   background-color: rgba(245, 241, 237, 0.3);
 }
 
-.navbar {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+@media (min-width: 576px) {
+  .app {
+    margin: 20px;
+    border-radius: 20px;
+  }
+  .navbar {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 }
 
 .home-main {
@@ -23,10 +33,42 @@ html {
   padding: 20px 0;
 }
 
+@media (max-width: 576px) {
+  .hero-sec {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-sec h1 {
+    font-size: 24px;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-sec {
+    padding: 30px 20px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .hero-sec {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-sec {
+    text-align: left;
+  }
+}
+
 .hero-right {
   display: block;
-  height: 450px;
-  width: 450px;
+  height: 300px;
+  width: 300px;
   margin-top: 70px;
   border-radius: 100%;
   background-image: linear-gradient(
@@ -37,6 +79,18 @@ html {
   );
   background-size: 500%;
   animation: right-ball-animate 1.5s ease infinite alternate;
+}
+.hero-right img {
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero-right {
+    height: 450px;
+    width: 450px;
+    display: block;
+  }
 }
 
 .hero-right_sm {
@@ -77,6 +131,24 @@ html {
   padding: 40px 0;
 }
 
+.service-icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  /* clip-path: polygon(100% 0, 0 0, 50% 100%); */
+}
+.service-icon::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(54, 54, 54);
+  border-radius: 100%;
+  transform: translate(-7px, -7px);
+  z-index: -1;
+}
+
 .title::after {
   content: ' ';
   display: block;
@@ -87,9 +159,14 @@ html {
 }
 
 .card {
-  padding: 30px;
-  margin: 10px 0;
+  padding: 40px 30px;
+  height: 300px;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .project-main {
