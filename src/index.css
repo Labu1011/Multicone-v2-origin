@@ -41,9 +41,22 @@ body {
     flex-direction: column;
   }
   .hero-sec h1 {
-    font-size: 24px;
+    font-size: 26px;
     width: 70%;
     text-align: center;
+  }
+  .hero-sec p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-sec h1 {
+    margin-top: 40px;
+  }
+  .hero-sec button {
+    width: 200px;
+    margin: 10px 0;
+    font-size: 14px;
   }
 }
 
@@ -69,7 +82,7 @@ body {
   display: block;
   height: 300px;
   width: 300px;
-  margin-top: 70px;
+  margin-top: 40px;
   border-radius: 100%;
   background-image: linear-gradient(
     45deg,
@@ -135,6 +148,7 @@ body {
   height: 80px;
   width: 80px;
   border-radius: 100%;
+
   /* clip-path: polygon(100% 0, 0 0, 50% 100%); */
 }
 .service-icon::before {
@@ -149,22 +163,14 @@ body {
   z-index: -1;
 }
 
-.title::after {
-  content: ' ';
-  display: block;
-  height: 5px;
-  width: 100px;
-  margin: 10px auto;
-  background-color: rgb(248, 216, 74);
-}
-
 .card {
-  padding: 40px 30px;
+  padding: 0 20px;
   height: 300px;
   text-align: center;
   cursor: pointer;
   transition: all 0.5s ease;
 }
+
 .card:hover {
   transform: translateY(-10px);
 }
@@ -175,6 +181,7 @@ body {
 
 .project-image-container {
   overflow: hidden;
+  position: relative;
   border-radius: 10px;
   height: auto;
 }
@@ -184,10 +191,49 @@ body {
   width: auto;
   cursor: pointer;
   transition: all 1s ease;
+  z-index: -1;
 }
-.project-img:hover {
-  transform: scale(1.2);
-  filter: blur(3px);
+
+.on-hover-div {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: rgba(214, 214, 214, 0.319);
+  z-index: 100;
+  transition: all 1s ease;
+  cursor: pointer;
+  animation: project-back 0.5s ease infinite alternate;
+}
+
+@keyframes project-back {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.on-hover-div .project-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.project-image-container:hover .on-hover-div {
+  height: 100%;
+}
+.project-image-container:hover .project-img {
+  filter: blur(1px);
+  transform: scale(1.3);
+}
+
+.team-main {
+  background-color: rgb(240, 239, 238);
+  padding: 40px 0;
 }
 
 /* helper class */
@@ -198,6 +244,14 @@ body {
   color: rgb(71, 71, 71);
 }
 
+.title::after {
+  content: ' ';
+  display: block;
+  height: 5px;
+  width: 100px;
+  margin: 10px auto;
+  background-color: rgb(248, 216, 74);
+}
 .footer {
   padding: 20px;
 }

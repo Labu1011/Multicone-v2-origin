@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
 import ServiceScreen from './screens/ServiceScreen'
 import ProjectScreen from './screens/ProjectScreen'
+import TeamMembersScreen from './screens/TeamMembersScreen'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <HomeScreen />
         <ServiceScreen />
         <ProjectScreen />
+        <TeamMembersScreen />
       </main>
       <Footer />
     </div>

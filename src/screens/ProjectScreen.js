@@ -22,6 +22,9 @@ const ProjectScreen = () => {
                     alt={project.alt}
                     className='project-img'
                   />
+                  <div className='on-hover-div'>
+                    <Button className='project-btn'>Preview</Button>
+                  </div>
                 </div>
               </Col>
             ))}

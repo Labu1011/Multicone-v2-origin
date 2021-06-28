@@ -12,12 +12,12 @@ const ServiceScreen = () => {
             <Col md={6} sm={12} lg={4}>
               <Card className='card my-2  service-card d-flex flex-column justify-content-center align-items-center'>
                 <div
-                  className='my-1 service-icon'
+                  className='my-2 service-icon'
                   style={{ background: '#28B5B5' }}
                 >
                   <Layers className='m-2' size={30} color='white' />
                 </div>
-                <Card.Title className='title-dark'>UI/UX</Card.Title>
+                <Card.Title className='title-dark card-title'>UI/UX</Card.Title>
                 <Card.Text className='para-dark'>
                   Landing Pages, User Flow, Wireframing, Prototyping, Mobile App
                   Design, Web App
@@ -28,13 +28,15 @@ const ServiceScreen = () => {
             <Col md={6} sm={12} lg={4}>
               <Card className='card my-2  service-card d-flex justify-content-center align-items-center'>
                 <div
-                  className='my-1 service-icon'
+                  className='my-2 service-icon'
                   style={{ background: '#F14668' }}
                 >
                   <Image className='m-2' size={30} color='white' />
                 </div>
-                <Card.Title className='title-dark'>Illustration</Card.Title>
-                <Card.Text className='para-dark'>
+                <Card.Title className='title-dark card-title'>
+                  Illustration
+                </Card.Title>
+                <Card.Text className='para-dark card-para'>
                   Logo Design, Icon Set, Illustration Guide, Illustration Set
                 </Card.Text>
               </Card>
@@ -43,15 +45,15 @@ const ServiceScreen = () => {
             <Col md={6} sm={12} lg={4}>
               <Card className='card my-2  service-card d-flex flex-column justify-content-center align-items-center'>
                 <div
-                  className='my-1 service-icon'
+                  className='my-2 service-icon'
                   style={{ background: '#845EC2' }}
                 >
                   <Monitor className='m-2' size={30} color='white' />
                 </div>
-                <Card.Title className='title-dark'>
+                <Card.Title className='title-dark card-title'>
                   Desktop Development
                 </Card.Title>
-                <Card.Text className='para-dark'>
+                <Card.Text className='para-dark card-para'>
                   Cross platform,Store Management, Bussiness Management
                   Tools,Educational tools
                 </Card.Text>
@@ -61,15 +63,15 @@ const ServiceScreen = () => {
             <Col md={6} sm={12} lg={4}>
               <Card className='card my-2  service-card d-flex justify-content-center align-items-center'>
                 <div
-                  className='my-1 service-icon'
+                  className='my-2 service-icon'
                   style={{ background: '#F54748' }}
                 >
                   <Code className='m-2' size={30} color='white' />
                 </div>
-                <Card.Title className='title-dark'>
+                <Card.Title className='title-dark card-title'>
                   Frontend Development
                 </Card.Title>
-                <Card.Text className='para-dark'>
+                <Card.Text className='para-dark card-para'>
                   HTML5,vanila CSS3 ,SCSS,Bootstrap v5, TailwindCSS, Material
                   UI, JavaScript,React.js, Vue.js, NEXT.js
                 </Card.Text>
@@ -79,15 +81,15 @@ const ServiceScreen = () => {
             <Col md={6} sm={12} lg={4}>
               <Card className='card my-2  service-card d-flex justify-content-center align-items-center'>
                 <div
-                  className='my-1 service-icon'
+                  className='my-2 service-icon'
                   style={{ background: '#FB9300' }}
                 >
                   <Terminal className='m-2' size={30} color='white' />
                 </div>
-                <Card.Title className='title-dark'>
+                <Card.Title className='title-dark card-title'>
                   Backend Development
                 </Card.Title>
-                <Card.Text className='para-dark'>
+                <Card.Text className='para-dark card-para'>
                   Node.js, PHP, Laravel, Python, Django, MongoDB, MySQL,
                   PostgreSQL, Microservices
                 </Card.Text>
@@ -97,15 +99,15 @@ const ServiceScreen = () => {
             <Col md={6} sm={12} lg={4}>
               <Card className='card my-2  service-card d-flex justify-content-center align-items-center'>
                 <div
-                  className='my-1 service-icon'
+                  className='my-2 service-icon'
                   style={{ background: '#29BB89' }}
                 >
                   <Tablet className='m-2' size={30} color='white' />
                 </div>
-                <Card.Title className='title-dark'>
+                <Card.Title className='title-dark card-title'>
                   Android/IOS Development
                 </Card.Title>
-                <Card.Text className='para-dark'>
+                <Card.Text className='para-dark card-para'>
                   Bussiness , E-commerce,Restaurant Management, CMS, Agency
                   monitoring
                 </Card.Text>
