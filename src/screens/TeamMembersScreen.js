@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Button, Row, Col, Card } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import { FaFacebookSquare, FaGithub, FaTwitter } from 'react-icons/fa'
 
 const TeamMembersScreen = () => {
