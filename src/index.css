@@ -26,7 +26,11 @@ body {
 .home-main {
   height: auto;
   width: 100%;
-  margin-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .home-main {
+    margin: 50px 0;
+  }
 }
 .hero-sec {
   display: block;
@@ -106,12 +110,10 @@ body {
   }
 }
 
-.hero-right_sm {
-  display: block;
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  background-color: rgb(255, 235, 124);
+@media (max-width: 992px) {
+  .hero-right {
+    margin-bottom: 30px;
+  }
 }
 
 .__first {
@@ -140,7 +142,11 @@ body {
 }
 
 .service-main {
-  background-color: rgb(240, 239, 238);
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 117, 82),
+    rgb(255, 33, 170)
+  );
   padding: 40px 0;
 }
 
@@ -232,8 +238,22 @@ body {
 }
 
 .team-main {
-  background-color: rgb(240, 239, 238);
+  background-color: rgb(251, 210, 75);
   padding: 40px 0;
+  color: white;
+}
+
+.team-card {
+  height: auto;
+  margin: 10px 0;
+}
+
+.team-img {
+  margin: 10px 0;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  overflow: hidden;
 }
 
 /* helper class */

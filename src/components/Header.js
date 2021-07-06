@@ -26,10 +26,10 @@ const Header = () => {
           >
             <Nav>
               <Nav.Link href='/'>Home</Nav.Link>
-              <Nav.Link href='#services'>Services</Nav.Link>
-              <Nav.Link href='/contact'>Contact</Nav.Link>
-              <Nav.Link href='/about'>About</Nav.Link>
-              <Button className='mx-3'>Sign In</Button>
+              <Nav.Link href='#s1'>Services</Nav.Link>
+              <Nav.Link href='#p1'>Projects</Nav.Link>
+              <Nav.Link href='#t1'>Team</Nav.Link>
+              <Button className='mx-3'>Let's talk</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

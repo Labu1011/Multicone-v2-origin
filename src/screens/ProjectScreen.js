@@ -4,10 +4,10 @@ import projectData from '../data/projectData'
 
 const ProjectScreen = () => {
   return (
-    <div className='project-main'>
+    <div className='project-main' id='p1'>
       <Container>
         <Row className='d-flex justify-content-center'>
-          <h1 className='text-center title'>Explore our Projects</h1>
+          <h1 className='text-center title'>Explore Our Projects</h1>
           <Row className='my-4'>
             {projectData.map((project) => (
               <Col
@@ -23,7 +23,9 @@ const ProjectScreen = () => {
                     className='project-img'
                   />
                   <div className='on-hover-div'>
-                    <Button className='project-btn'>Preview</Button>
+                    <Button className='project-btn' variant='warning'>
+                      Preview
+                    </Button>
                   </div>
                 </div>
               </Col>
